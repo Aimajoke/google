@@ -4,6 +4,7 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    background-img: url("");
 }
 a{
     text-decoration: none;
@@ -45,8 +46,6 @@ main{
     margin-top: 150px;
 }
 main .main-logo{
-    display: flex;
-    justify-content: flex-start;
     margin: 0 auto;
     margin-bottom: 20px;
 }
