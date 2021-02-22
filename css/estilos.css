@@ -5,20 +5,121 @@ body{
     flex-direction: column;
     justify-content: center;
 }
-.navbar{
-height: 60px;
-display: flex;
-align-items: center;
-justify-content: flex-end;
-padding-right: 10px;
+a{
+    text-decoration: none;
+    cursor: pointer;
 }
-.items{
+header{
+    width: 100%;
+    height: 60px;
+}
+header nav{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+header nav .header-nav-section{
+    font-size: 13px;
+    height: auto;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    width: 250px;
+    align-items: center;
+}
+header nav .header-nav-section a{
+    margin-right: 15px;
+    color: rgb(0, 0, 0);
+    text-transform: capitalize;
+}
+nav .header-nav-section .material-icons{
+    margin-left: 10px;
+}
+nav .header-nav-section .yo{
+    border-radius: 50%;
+    margin-left: 3px;
+    margin-right: -18px;
+}
+main{
+    text-align: center;
+    margin-top: 150px;
+}
+main .main-logo{
+    display: flex;
+    justify-content: flex-start;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+main .main-searchBar{
+    width: 584px;
+    margin: 0 auto;
+    margin-bottom: 35px;
+}
+.material-icons.md-dark.md-inactive { color: rgba(0, 0, 0, 0.26); }
+.material-icons.md-18 { font-size: 18px; }
+main .main-searchBar-container{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width: 584px;
+    border-radius: 100px;
+    border: 1px solid #dfe1e5;
+}
+main .main-searchBar input{
+    width: 487px;
+    height: 40px;
+    border: none;
+    outline: none;
+}
+main .main-searchBar-container:hover{
+    box-shadow: 0 1px 6px 0 #20212447;
+    border-color:  #20212500;
+}
+main .main-searchBar .search-icon  {
+   padding: 0 auto;
+    height: 18px;
+    width: 18px;
+
+}
+main .main-searchBar .mic-icon{
+    height: 24px;
+    width: 24px;
+    background-image: url(https://i.pinimg.com/originals/ea/5f/5b/ea5f5bd3b4110f2afb958049b4096d3a.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    cursor: pointer;
+}
+main .main-buttons{
+    width: 530px;
+    margin: 0 auto;
+}
+main .main-buttons div{
+    display: inline-block;
+}
+main .main-buttons button{
+    background-color: #f8f9fa;
+    border: 1px solid transparent;
+    outline: none;
+    height: 34px;
+    padding: 0 16px;
+    color: #3c4043;
+    border-radius: 5px;
+    margin: 0 15px;
+}
+main .main-buttons button:hover{
+    border: 1px solid #dadce0;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    background-color: #f8f9fa;
+    color: #222;
+}
+
+/*.items{
     display: flex;
     align-items: center;
     height: 32px;
 }
 .items a {
-/* hackerman */
 margin: 0 9px;
 padding: 0;
 }
@@ -36,7 +137,6 @@ padding: 0;
     display: inherit;
     align-items: inherit;
     
-
 }
 .icons a{
     height: 32px;
@@ -53,13 +153,12 @@ padding: 0;
 .padi {
     padding: 8.5px
 }
+
 .search{
-    margin: -51px 0 0 0;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 633px;
 }
 #div1{
     flex-grow: 1;
@@ -119,23 +218,26 @@ padding: 0;
 .search a{
     text-decoration: none;
 }
-
-
-.country1{
+*/
+footer{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+footer .country1{
     background-color: #f2f2f2;
     font-size: 15px;
     font-family: Arial, Helvetica, sans-serif;
-    margin: 51px 0 0 0;
     height: 47px;
     border: 1px solid transparent;
     border-bottom: 1px solid #dadce0;
 }
-.country{
+footer p a{
     padding: 15px 30px;
     text-decoration: none;
     color: #70757a;
 }
-.country:hover{
+footer .country:hover{
     padding: 15px 30px;
     text-decoration: underline;
     color: #70757a;
@@ -147,27 +249,31 @@ padding: 0;
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     height: 47px;
-    /* border: 1px solid #dadce0; */
-}
-.footer-sections{
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     align-items: center;
-    padding:0 15px;
 }
-.footer p {
+footer ul{
     margin: 0;
-    display: flex;
+    padding: 15px 15px;
+}
+.footer li {
+    margin: 0;
+    display: inline-block;
     align-items: inherit;
 }
-.footer-links{
+footer ul a{
     padding: 15px 15px;
     text-decoration: none;
     color: #70757a;
 }
-.footer-links:hover{
-    padding: 15px 30px;
+footer ul a:hover{
     text-decoration: underline;
     color: #70757a;
 }
-
+footer .footer-right{
+    justify-self: right;
+}
+footer .footer-left{
+    justify-self: left;
+}
